@@ -12,6 +12,12 @@ class DatabaseSeeder extends Seeder
             CitySeeder::class,
             AdminSeeder::class,
             UserSeeder::class,
+            InstituteCategorySeeder::class,
+            InstituteSeeder::class,
+            CourseSeeder::class,
+            BlogSeeder::class,
+            ListingRequestSeeder::class,
+            InquirySeeder::class,
         ]);
     }
 }

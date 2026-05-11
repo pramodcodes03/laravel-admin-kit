@@ -60,6 +60,19 @@ return [
             'report' => false,
         ],
 
+        'e2e' => [
+            'driver' => 's3',
+            'key' => env('E2E_OBJECT_STORAGE_ACCESS_KEY'),
+            'secret' => env('E2E_OBJECT_STORAGE_SECRET_KEY'),
+            'region' => 'ap-south-1',
+            'bucket' => env('E2E_OBJECT_STORAGE_BUCKET', 'digitalnexstep'),
+            'endpoint' => env('E2E_OBJECT_STORAGE_ENDPOINT', 'https://objectstore.e2enetworks.net'),
+            'use_path_style_endpoint' => true,
+            'url' => env('E2E_OBJECT_STORAGE_ENDPOINT') . '/' . env('E2E_OBJECT_STORAGE_BUCKET'),
+            'throw' => false,
+            'visibility' => 'public',
+        ],
+
     ],
 
     /*
